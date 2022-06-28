@@ -6,5 +6,4 @@ def permutations(x, y, z, n):
                  for j in y_values
                  for k in z_values 
                  if i+j+k != n]
-  print(permutations)
   return permutations

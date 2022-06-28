@@ -17,7 +17,7 @@ with Diagram("Architecture with CDN and Cache", show=False):
         svc_group = [EC2("Server1"),
                      EC2("Server2")]
 
-    with Cluster(""):
+    with Cluster("Data tier"):
         master_db = RDS("Master DB")
         slave_db = RDS("Slave DB")
         master_db - [slave_db]
